@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#1a1f28"/>
+  <rect x="24" y="24" width="752" height="452" fill="none" stroke="#5a6578" stroke-dasharray="8 8"/>
+  <text x="400" y="240" text-anchor="middle" fill="#9aa3b2" font-family="Arial, sans-serif" font-size="28">Process snapshot placeholder</text>
+  <text x="400" y="280" text-anchor="middle" fill="#6b7380" font-family="Arial, sans-serif" font-size="18">Replace with WIP / production screenshot</text>
+</svg>
