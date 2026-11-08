@@ -18,10 +18,10 @@ Personal industry portfolio site for **GADS7332 Part 3** (Design Portfolio and D
 Open `index.html` in a browser, or from this folder:
 
 ```bash
-npx --yes serve .
+python -m http.server 5173
 ```
 
-Then visit the local URL shown in the terminal.
+Then visit `http://127.0.0.1:5173/`.
 
 ## Fill-in checklist (before showcase)
 
