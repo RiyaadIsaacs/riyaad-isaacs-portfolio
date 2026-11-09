@@ -1,72 +1,96 @@
-# Hosting & custom domain
+# Hosting & custom domain (Xneelo)
 
-You do **not** need to buy web hosting for this portfolio. The site is static HTML/CSS/JS.
+**Domain purchased:** `riyaad-isaacs.co.za` (Xneelo)  
+**Showcase video:** https://youtu.be/JTp2ZXE9Sso  
 
-## 1. Publish for free (do this first)
+You already own the **domain**. You still need free **hosting** for the HTML files, then point Xneelo DNS at that host.
+
+---
+
+## 1. Publish the site for free (do this first)
 
 ### Option A — GitHub Pages (recommended)
 
-1. Create a GitHub account if you do not have one.
-2. Create a new repository (public), e.g. `riyaad-isaacs-portfolio`.
-3. From this folder, push the site:
+1. Create a **public** GitHub repo (e.g. `riyaad-isaacs-portfolio` or `riyaad-isaacs.github.io`).
+2. From this folder:
 
 ```bash
-git init
 git add .
-git commit -m "Initial Riyaad Isaacs portfolio site"
+git commit -m "Portfolio site ready for Pages"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/riyaad-isaacs-portfolio.git
+git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
 git push -u origin main
 ```
 
-4. On GitHub: **Settings → Pages → Build and deployment**.
-5. Set Source to **Deploy from a branch**, branch **main**, folder **/ (root)**.
-6. After a minute, open `https://YOUR_USERNAME.github.io/riyaad-isaacs-portfolio/`.
-
-If the repo is named `YOUR_USERNAME.github.io`, the site will live at the root domain instead of a subpath.
+3. GitHub → **Settings → Pages**
+4. Source: **Deploy from a branch** → `main` → `/ (root)` → Save
+5. Confirm the free URL works: `https://YOUR_USERNAME.github.io/REPO_NAME/`
 
 ### Option B — Netlify
 
-1. Go to [netlify.com](https://www.netlify.com) and sign in (GitHub login is fine).
-2. **Add new site → Import an existing project** (or drag-and-drop this folder).
-3. No build command needed. Publish directory: site root.
-4. You get a free URL like `random-name.netlify.app`.
+1. Drag this folder into [netlify.com](https://www.netlify.com) (or connect the GitHub repo).
+2. No build command. Publish the site root.
+3. Confirm the `*.netlify.app` URL works.
 
-## 2. Buy a custom domain (optional, but POE-recommended)
+---
 
-A **domain** is only the name people type (`riyaad-isaacs.com`). It is separate from hosting.
+## 2. Connect `riyaad-isaacs.co.za` in Xneelo
 
-| You buy | Approx. cost | Purpose |
+Log into **Xneelo** → open the domain **riyaad-isaacs.co.za** → **DNS management** (sometimes called Zone / DNS records).
+
+### If using GitHub Pages
+
+1. In the GitHub repo: **Settings → Pages → Custom domain** → enter:
+
+   `riyaad-isaacs.co.za`
+
+   Save. GitHub will look for DNS records.
+
+2. In Xneelo DNS, add / update:
+
+| Type | Name / Host | Value |
 | --- | --- | --- |
-| Domain name only | ~R150–R300 / year | Professional URL for cards, poster QR, LinkedIn |
-| Hosting | R0 | Already free on GitHub Pages / Netlify |
-| HTTPS / SSL | R0 | Issued automatically by the host |
+| **A** | `@` (or blank / `riyaad-isaacs.co.za`) | `185.199.108.153` |
+| **A** | `@` | `185.199.109.153` |
+| **A** | `@` | `185.199.110.153` |
+| **A** | `@` | `185.199.111.153` |
+| **CNAME** | `www` | `riyaadisaacs.github.io` |
 
-Suggested registrars: Namecheap, Google Domains / Squarespace Domains, Cloudflare Registrar. Students with the [GitHub Student Developer Pack](https://education.github.com/pack) may get a free `.me` year via Namecheap education.
+Your GitHub user is **RiyaadIsaacs**, so the Pages hostname is `riyaadisaacs.github.io`.
 
-Good names to check: `riyaad-isaacs.com`, `riyaadisaacs.com`, `riyaad-isaacs.me`.
+3. Remove any old A/CNAME records that conflict (parking pages, default Xneelo web hosting pointers).
+4. Wait 15 minutes–a few hours. In GitHub Pages, tick **Enforce HTTPS** when it appears.
+5. This repo already includes a `CNAME` file with `riyaad-isaacs.co.za` for Pages.
 
-**Buy the domain only after the free URL works.**
+Official reference: [GitHub Pages custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
 
-## 3. Point the domain at GitHub Pages
+### If using Netlify
 
-1. In the repo: **Settings → Pages → Custom domain** → enter `riyaad-isaacs.com` → Save.
-2. GitHub shows the DNS records you need (usually `A` records for the apex and/or a `CNAME` for `www`).
-3. At your registrar’s DNS panel, add exactly those records.
-4. Wait for DNS (minutes to a few hours). Tick **Enforce HTTPS** when it becomes available.
-5. Optional: add a `CNAME` file in this repo root containing your domain (GitHub often creates this for you).
+1. Netlify → Domain management → **Add custom domain** → `riyaad-isaacs.co.za`
+2. Netlify shows the exact DNS records (often):
 
-### Netlify custom domain
+| Type | Name | Value |
+| --- | --- | --- |
+| **A** or **ALIAS** | `@` | Netlify load-balancer IP / ALIAS target they show |
+| **CNAME** | `www` | `your-site.netlify.app` |
 
-**Domain management → Add domain** → follow Netlify’s DNS instructions (often a single `CNAME` or their nameservers).
+3. Enter those in Xneelo DNS exactly as Netlify displays them.
+4. Enable HTTPS in Netlify (automatic once DNS verifies).
 
-## 4. After the live URL exists
+---
 
-Update on every project page:
+## 3. Quick checks
 
-- Demo video links + `data-qr="https://..."` attributes
-- Download links + matching `data-qr` values
-- Contact email / LinkedIn on `contact.html`
-- Business cards, A2 poster QR, and LinkedIn featured section
+- [ ] Free host URL loads the portfolio
+- [ ] `http://riyaad-isaacs.co.za` opens the same site
+- [ ] `https://riyaad-isaacs.co.za` shows a padlock
+- [ ] `www.riyaad-isaacs.co.za` redirects or loads correctly
+- [ ] QR codes / business cards use `https://riyaad-isaacs.co.za`
 
-QR codes on project pages generate automatically from `data-qr` via a public QR API when a real URL is set.
+---
+
+## Notes
+
+- **Do not upload** `Showcase.mp4` to the website (it is ~1.4 GB). Use the YouTube link already embedded on the home page and project QR codes.
+- Domain renewals stay with **Xneelo**; hosting stays free on GitHub/Netlify unless you later buy Xneelo web hosting (not required for this static site).
+- DNS typos are the #1 delay — copy values carefully and wait before changing them again.

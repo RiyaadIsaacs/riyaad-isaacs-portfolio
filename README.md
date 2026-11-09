@@ -3,7 +3,10 @@
 Personal industry portfolio site for **GADS7332 Part 3** (Design Portfolio and Display).
 
 **Brand:** Riyaad-Isaacs  
-**Positioning:** Game designer & developer  
+**Positioning:** Programmer & game developer  
+**Contact:** Riyaad3lhjigh@gmail.com · [LinkedIn](https://www.linkedin.com/in/riyaad-isaacs-9a6b0637a/)  
+**Domain:** [riyaad-isaacs.co.za](https://riyaad-isaacs.co.za) (Xneelo — connect DNS after hosting)  
+**Showcase reel:** [youtu.be/JTp2ZXE9Sso](https://youtu.be/JTp2ZXE9Sso)  
 **Stack:** Static HTML, CSS, JavaScript (GitHub Pages / Netlify ready)
 
 ## Featured projects
@@ -25,14 +28,22 @@ Then visit `http://127.0.0.1:5173/`.
 
 ## Fill-in checklist (before showcase)
 
-- [ ] Contact email + LinkedIn URL on `contact.html`
-- [ ] Team names on each project poster / facts panel
-- [ ] Personal role blurbs (remove placeholder notes)
+- [x] Contact email + LinkedIn URL on `contact.html`
+- [x] Role positioning: programmer & game developer
+- [x] itch download links + QR for Mirror Split, Poaching Patrol, HELLp
+- [x] Team credits from itch for those three projects
+- [x] itch cover art used as posters for those three
+- [x] Showcase YouTube reel embedded + demo QR on all projects
+- [x] Domain name purchased: riyaad-isaacs.co.za (Xneelo)
+- [ ] Publish free host (GitHub Pages / Netlify) — see [HOSTING.md](HOSTING.md)
+- [ ] Point Xneelo DNS at that host — see [HOSTING.md](HOSTING.md)
+- [ ] itch / download link for The Wretch (still missing)
+- [ ] Personal programming contribution blurbs (remove placeholder notes)
 - [ ] Real process screenshots for The Wretch, HELLp, Mirror Split
-- [ ] Demo video URLs + download URLs (`data-qr` attributes on project pages)
-- [ ] Replace SVG posters with final poster art if required
-- [ ] Publish free host URL — see [HOSTING.md](HOSTING.md)
-- [ ] Optional: buy domain and attach DNS — see [HOSTING.md](HOSTING.md)
+- [x] HELLp confirmed as Unity
+- [ ] Map Mirror Split itch handles to full legal names if required
+- [ ] Exhibition extras: A2 poster, A3 brag boards, business cards, LinkedIn polish
+- [ ] Online Showcase (Appendix B): headshot, 600-char About, images/videos by deadline
 
 ## POE coverage on each project page
 

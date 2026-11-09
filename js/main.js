@@ -39,11 +39,13 @@
   if (footer) {
     footer.innerHTML = `
       <div class="container footer-row">
-        <p>© ${new Date().getFullYear()} Riyaad Isaacs · Game designer &amp; developer</p>
+        <p>© ${new Date().getFullYear()} Riyaad Isaacs · Programmer &amp; game developer</p>
         <p>
-          <a href="${root}contact.html">Contact</a>
+          <a href="https://riyaad-isaacs.co.za">riyaad-isaacs.co.za</a>
           ·
-          <a href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+          <a href="mailto:Riyaad3lhjigh@gmail.com">Email</a>
+          ·
+          <a href="https://www.linkedin.com/in/riyaad-isaacs-9a6b0637a/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
         </p>
       </div>
     `;
