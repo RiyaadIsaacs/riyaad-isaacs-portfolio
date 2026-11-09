@@ -11,20 +11,22 @@ You already own the **domain**. You still need free **hosting** for the HTML fil
 
 ### Option A — GitHub Pages (recommended)
 
-1. Create a **public** GitHub repo (e.g. `riyaad-isaacs-portfolio` or `riyaad-isaacs.github.io`).
-2. From this folder:
+Your GitHub account: [github.com/RiyaadIsaacs](https://github.com/RiyaadIsaacs)
+
+1. Create a **public** repo named `riyaad-isaacs-portfolio` (or `RiyaadIsaacs.github.io` for a root site).
+2. From this folder (already committed locally):
 
 ```bash
-git add .
-git commit -m "Portfolio site ready for Pages"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
+git remote add origin https://github.com/RiyaadIsaacs/riyaad-isaacs-portfolio.git
 git push -u origin main
 ```
 
 3. GitHub → **Settings → Pages**
 4. Source: **Deploy from a branch** → `main` → `/ (root)` → Save
-5. Confirm the free URL works: `https://YOUR_USERNAME.github.io/REPO_NAME/`
+5. Confirm the free URL works: `https://riyaadisaacs.github.io/riyaad-isaacs-portfolio/`
+
+Note: GitHub Pages URLs use your username in **lowercase**: `riyaadisaacs.github.io`.
 
 ### Option B — Netlify
 
