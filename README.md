@@ -37,7 +37,7 @@ Then visit `http://127.0.0.1:5173/`.
 - [x] Domain name purchased: riyaad-isaacs.co.za (Xneelo)
 - [ ] Publish free host (GitHub Pages / Netlify) — see [HOSTING.md](HOSTING.md)
 - [ ] Point Xneelo DNS at that host — see [HOSTING.md](HOSTING.md)
-- [ ] itch / download link for The Wretch (still missing)
+- [x] itch / download link for The Wretch
 - [ ] Personal programming contribution blurbs (remove placeholder notes)
 - [ ] Real process screenshots for The Wretch, HELLp, Mirror Split
 - [x] HELLp confirmed as Unity

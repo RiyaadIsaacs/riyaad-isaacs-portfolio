@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A2 Poster (ChatGPT art) · Riyaad Isaacs</title>
+  <style>
+    @page { margin: 0; size: A2 portrait; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #222; }
+    .screen-only {
+      max-width: 720px; margin: 20px auto; padding: 0 16px;
+      font-family: Arial, sans-serif; color: #eee; line-height: 1.45;
+    }
+    .screen-only a { color: #6dffb0; }
+    .poster {
+      width: 420mm;
+      height: 594mm;
+      margin: 10mm auto;
+      position: relative;
+      /* QRs are baked into a2-with-qr.jpg so they stay locked to the art */
+      background: #0b0e13 url("assets/photos/a2-with-qr.jpg") center / cover no-repeat;
+      overflow: hidden;
+    }
+
+    @media print {
+      .screen-only { display: none !important; }
+      body { background: #fff; }
+      .poster { margin: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+  <div class="screen-only">
+    <p><strong>A2 Poster</strong> — ChatGPT artwork with scannable Portfolio + LinkedIn QR codes (baked into the image).</p>
+    <p><kbd>Ctrl+P</kbd> → Save as PDF → Paper <strong>A2</strong> → Margins <strong>None</strong> → Background graphics <strong>On</strong>.</p>
+    <p>
+      <a href="a2-poster.html">Backup clean HTML A2</a> ·
+      <a href="index.html">Print index / A3 brag boards</a>
+    </p>
+  </div>
+
+  <div class="poster" role="img" aria-label="A2 poster for Riyaad Isaacs with Portfolio and LinkedIn QR codes"></div>
+</body>
+</html>
