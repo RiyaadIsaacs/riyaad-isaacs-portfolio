@@ -52,5 +52,6 @@ Then visit `http://127.0.0.1:5173/`.
 - Project brief  
 - Role & contribution  
 - Technologies  
+- Gameplay and UI captures (itch screenshots)  
 - Demo video link + QR slot  
 - Download link + QR slot  
