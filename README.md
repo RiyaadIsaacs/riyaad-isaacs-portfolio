@@ -52,6 +52,5 @@ Then visit `http://127.0.0.1:5173/`.
 - Project brief  
 - Role & contribution  
 - Technologies  
-- Process snapshots  
 - Demo video link + QR slot  
 - Download link + QR slot  
